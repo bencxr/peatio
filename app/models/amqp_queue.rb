@@ -78,6 +78,7 @@ class AMQPQueue
       end
 
       def deliver
+        Rails.logger.info "in deliver"
         return deliver! if environment_excluded?
 
         if @mailer_class.deliver?

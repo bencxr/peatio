@@ -246,6 +246,7 @@ class Member < ActiveRecord::Base
   end
 
   def send_activation
+    Rails.logger.info "Sending activation"
     Token::Activation.create(member: self)
   end
 

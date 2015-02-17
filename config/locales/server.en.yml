@@ -296,10 +296,13 @@ en:
     pab: Ping An Bank Co., Ltd.
     gdb: Guangdong Development Bank
     psbc: Postal Savings Bank of China
+    stc: Silicon Tin Can
+    svcu: Silicon Valley Credit Union
   market:
     currency:
       btc: BTC
       cny: CNY
+      usd: USD
       doge: DOGE
       pts: PTS
       ltc: LTC
@@ -313,11 +316,15 @@ en:
       key: BTS
       code: BTSX
       name: BitsharesX
-      format: '0,0.0000'
     renminbi:
       key: CNY
       code: CNY
       name: Chinese Yuan
+      format: '0,0.00'
+    usdollar:
+      key: USD
+      code: USD
+      name: US DOLLAR
       format: '0,0.00'
     dogecoin:
       key: DOG
@@ -742,7 +749,7 @@ en:
         cny_format: '0.00'
         btc_format: '0.00000000'
         reason:
-          cny:
+          usd:
             strike_add: Plus
             strike_sub: Sub
             deposit: Deposit
@@ -987,7 +994,7 @@ en:
         balance: Balance
         available: Available
         title: "%{icon} %{c} Account"
-        cny_format: '0.00'
+        usd_format: '0.00'
         btc_format: '0.00000000'
         total: Total
   guides:
@@ -1389,7 +1396,7 @@ en:
       wait: Wait
       cancel: Cancel
     currency:
-      cny: CNY
+      usd: USD
       btc: BTC
     order:
       state:
