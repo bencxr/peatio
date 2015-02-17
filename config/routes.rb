@@ -21,6 +21,8 @@ Peatio::Application.routes.draw do
   get '/auth/failure' => 'sessions#failure', :as => :failure
   match '/auth/:provider/callback' => 'sessions#create', via: [:get, :post]
 
+  post '/webhooks/tx' => 'webhooks#tx'
+
   resource :member, :only => [:edit, :update]
   resource :identity, :only => [:edit, :update]
 
